@@ -1,0 +1,11 @@
+{
+  "name": "arena-agent",
+  "owner": {"name": "Musaib Bin Bashir"},
+  "plugins": [
+    {
+      "name": "arena-agent",
+      "source": "./",
+      "description": "Build, run and analyse Rockwell Arena simulation models: MCP tools plus the arena-modeling skill"
+    }
+  ]
+}

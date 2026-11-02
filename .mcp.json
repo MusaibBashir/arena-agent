@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "arena-agent": {
+      "command": "uvx",
+      "args": ["--python", "3.12", "--from", "https://github.com/MusaibBashir/arena-agent/archive/refs/heads/main.zip",
+               "arena-agent", "mcp"]
+    }
+  }
+}

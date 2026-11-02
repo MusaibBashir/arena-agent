@@ -1,0 +1,10 @@
+{
+  "name": "arena-agent",
+  "version": "0.1.0",
+  "description": "Build, run and analyse Rockwell Arena simulation models: MCP tools plus the arena-modeling skill",
+  "author": {"name": "Musaib Bin Bashir"},
+  "homepage": "https://github.com/MusaibBashir/arena-agent",
+  "repository": "https://github.com/MusaibBashir/arena-agent",
+  "license": "MIT",
+  "keywords": ["arena", "simulation", "discrete-event", "rockwell"]
+}

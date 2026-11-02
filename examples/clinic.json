@@ -1,0 +1,17 @@
+{
+  "save_as": "clinic.doe",
+  "run_setup": {"replications": 10, "replication_length": 480, "replication_length_units": "minutes",
+                "base_time_units": "minutes"},
+  "modules": [
+    {"id": "arrive", "type": "Create", "x": 0, "y": 0,
+     "data": {"Name": "Patients Arrive", "Entity Type": "Patient", "Interarrival Type": "Random", "Value": "5",
+              "Units": "Minutes"}},
+    {"id": "exam", "type": "Process", "x": 2500, "y": 0,
+     "data": {"Name": "Examination", "Action": "Seize Delay Release", "DelayType": "Expression",
+              "Expression": "EXPO(12)", "Units": "Minutes"},
+     "resources": [{"Resource Type": "Resource", "Resource Name": "Doctor", "Quantity": "1"}]},
+    {"id": "leave", "type": "Dispose", "x": 5000, "y": 0, "data": {"Name": "Patients Leave"}},
+    {"id": "doctors", "type": "Resource", "data": {"Name": "Doctor", "Capacity": "3"}}
+  ],
+  "connections": [{"from": "arrive", "to": "exam"}, {"from": "exam", "to": "leave"}]
+}

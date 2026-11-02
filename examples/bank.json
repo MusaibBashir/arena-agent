@@ -1,0 +1,35 @@
+{
+  "save_as": "bank.doe",
+  "run_setup": {"replications": 20, "replication_length": 8, "replication_length_units": "hours",
+                "base_time_units": "minutes"},
+  "modules": [
+    {"id": "arrive", "type": "Create", "x": 0, "y": 0,
+     "data": {"Name": "Customers Arrive", "Entity Type": "Customer", "Interarrival Type": "Random", "Value": "2",
+              "Units": "Minutes"}},
+    {"id": "stamp", "type": "Assign", "x": 2000, "y": 0,
+     "data": {"Name": "Stamp Arrival"},
+     "rows": [{"Type": "Attribute", "AName": "ArriveAt", "Value": "TNOW"},
+              {"Type": "Variable", "VName": "Arrived", "Value": "Arrived + 1"}]},
+    {"id": "which", "type": "Decide", "x": 4000, "y": 0,
+     "data": {"Name": "Business Customer?", "Type": "2-way by Chance", "Percent True": "20"}},
+    {"id": "desk", "type": "Process", "x": 6000, "y": -1500,
+     "data": {"Name": "Business Desk", "Action": "Seize Delay Release", "DelayType": "Triangular", "Min": "5",
+              "Value": "10", "Max": "20", "Units": "Minutes"},
+     "resources": [{"Resource Type": "Resource", "Resource Name": "Advisor", "Quantity": "1"}]},
+    {"id": "teller", "type": "Process", "x": 6000, "y": 1500,
+     "data": {"Name": "Teller Service", "Action": "Seize Delay Release", "DelayType": "Expression",
+              "Expression": "EXPO(4)", "Units": "Minutes"},
+     "resources": [{"Resource Type": "Resource", "Resource Name": "Teller", "Quantity": "1"}]},
+    {"id": "rec", "type": "Record", "x": 8500, "y": 0,
+     "data": {"Name": "Record Time In Bank"},
+     "rows": [{"Type": "Time Interval", "Attribute": "ArriveAt", "Tally Name": "Time In Bank"}]},
+    {"id": "leave", "type": "Dispose", "x": 10500, "y": 0, "data": {"Name": "Customers Leave"}},
+    {"id": "tellers", "type": "Resource", "data": {"Name": "Teller", "Capacity": "2"}},
+    {"id": "advisors", "type": "Resource", "data": {"Name": "Advisor", "Capacity": "2"}}
+  ],
+  "connections": [
+    {"from": "arrive", "to": "stamp"}, {"from": "stamp", "to": "which"},
+    {"from": "which", "to": "desk", "exit": "true"}, {"from": "which", "to": "teller", "exit": "false"},
+    {"from": "desk", "to": "rec"}, {"from": "teller", "to": "rec"}, {"from": "rec", "to": "leave"}
+  ]
+}

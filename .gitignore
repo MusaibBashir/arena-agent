@@ -1,0 +1,18 @@
+.venv/
+__pycache__/
+*.pyc
+dist/
+build/
+*.egg-info/
+.pytest_cache/
+# Arena run outputs next to example models
+examples/*.doe
+examples/*.db
+examples/*.out
+examples/*.err
+examples/*.p
+examples/*.dsn
+examples/*.opw
+examples/*_rpt.xlsm
+examples/*.Backup.doe
+*.bak-arena-agent

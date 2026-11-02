@@ -1,0 +1,502 @@
+
+                                      ARENA Simulation Results
+                                Musaib Bin Bashir - License: STUDENT
+
+                                  Summary for Replication 1 of 10
+
+Project: Unnamed Project                                             Run execution date :11/ 2/2026
+Analyst: Musaib Bin Bashir                                           Model revision date:11/ 2/2026
+
+Replication ended at time      : 480.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Patient.VATime                              13.107     (Insuf)    .03721     61.774         81    
+Patient.NVATime                             .00000     (Insuf)    .00000     .00000         81    
+Patient.WaitTime                            5.9959     (Insuf)    .00000     33.058         81    
+Patient.TranTime                            .00000     (Insuf)    .00000     .00000         81    
+Patient.OtherTime                           .00000     (Insuf)    .00000     .00000         81    
+Patient.TotalTime                           19.103     (Insuf)    .72206     63.363         81    
+Examination.Queue.WaitingTime               5.9228     (Insuf)    .00000     33.058         82    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Patient.WIP                                 3.2354     (Insuf)    .00000     11.000     1.0000    
+Doctor.NumberBusy                           2.2236     (Insuf)    .00000     3.0000     1.0000    
+Doctor.NumberScheduled                      3.0000     (Insuf)    3.0000     3.0000     3.0000    
+Doctor.Utilization                          .74121     (Insuf)    .00000     1.0000     .33333    
+Examination.Queue.NumberInQueue             1.0118     (Insuf)    .00000     8.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Patient.NumberIn                            82.000    
+Patient.NumberOut                           81.000    
+Doctor.NumberSeized                         82.000    
+Doctor.ScheduledUtilization                 .74121    
+System.NumberOut                            81.000    
+
+Beginning replication 2 of 10
+
+                                      ARENA Simulation Results
+                                Musaib Bin Bashir - License: STUDENT
+
+                                  Summary for Replication 2 of 10
+
+Project: Unnamed Project                                             Run execution date :11/ 2/2026
+Analyst: Musaib Bin Bashir                                           Model revision date:11/ 2/2026
+
+Replication ended at time      : 480.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Patient.VATime                              13.306     (Insuf)    .29557     96.990        100    
+Patient.NVATime                             .00000     (Insuf)    .00000     .00000        100    
+Patient.WaitTime                            33.065     (Insuf)    .00000     67.524        100    
+Patient.TranTime                            .00000     (Insuf)    .00000     .00000        100    
+Patient.OtherTime                           .00000     (Insuf)    .00000     .00000        100    
+Patient.TotalTime                           46.372     (Insuf)    1.1674     135.78        100    
+Examination.Queue.WaitingTime               32.970     (Insuf)    .00000     67.524        103    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Patient.WIP                                 10.176     (Insuf)    .00000     18.000     10.000    
+Doctor.NumberBusy                           2.8683     (Insuf)    .00000     3.0000     3.0000    
+Doctor.NumberScheduled                      3.0000     (Insuf)    3.0000     3.0000     3.0000    
+Doctor.Utilization                          .95611     (Insuf)    .00000     1.0000     1.0000    
+Examination.Queue.NumberInQueue             7.3078     (Insuf)    .00000     15.000     7.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Patient.NumberIn                            110.00    
+Patient.NumberOut                           100.00    
+Doctor.NumberSeized                         103.00    
+Doctor.ScheduledUtilization                 .95611    
+System.NumberOut                            100.00    
+
+Beginning replication 3 of 10
+
+                                      ARENA Simulation Results
+                                Musaib Bin Bashir - License: STUDENT
+
+                                  Summary for Replication 3 of 10
+
+Project: Unnamed Project                                             Run execution date :11/ 2/2026
+Analyst: Musaib Bin Bashir                                           Model revision date:11/ 2/2026
+
+Replication ended at time      : 480.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Patient.VATime                              11.171     (Insuf)    .04919     82.518        102    
+Patient.NVATime                             .00000     (Insuf)    .00000     .00000        102    
+Patient.WaitTime                            5.3840     (Insuf)    .00000     31.520        102    
+Patient.TranTime                            .00000     (Insuf)    .00000     .00000        102    
+Patient.OtherTime                           .00000     (Insuf)    .00000     .00000        102    
+Patient.TotalTime                           16.555     (Insuf)    .04919     82.518        102    
+Examination.Queue.WaitingTime               5.2357     (Insuf)    .00000     31.520        105    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Patient.WIP                                 3.5450     (Insuf)    .00000     12.000     3.0000    
+Doctor.NumberBusy                           2.3997     (Insuf)    .00000     3.0000     3.0000    
+Doctor.NumberScheduled                      3.0000     (Insuf)    3.0000     3.0000     3.0000    
+Doctor.Utilization                          .79992     (Insuf)    .00000     1.0000     1.0000    
+Examination.Queue.NumberInQueue             1.1453     (Insuf)    .00000     9.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Patient.NumberIn                            105.00    
+Patient.NumberOut                           102.00    
+Doctor.NumberSeized                         105.00    
+Doctor.ScheduledUtilization                 .79992    
+System.NumberOut                            102.00    
+
+Beginning replication 4 of 10
+
+                                      ARENA Simulation Results
+                                Musaib Bin Bashir - License: STUDENT
+
+                                  Summary for Replication 4 of 10
+
+Project: Unnamed Project                                             Run execution date :11/ 2/2026
+Analyst: Musaib Bin Bashir                                           Model revision date:11/ 2/2026
+
+Replication ended at time      : 480.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Patient.VATime                              11.677     (Insuf)    .00442     62.754         90    
+Patient.NVATime                             .00000     (Insuf)    .00000     .00000         90    
+Patient.WaitTime                            5.2865     (Insuf)    .00000     27.943         90    
+Patient.TranTime                            .00000     (Insuf)    .00000     .00000         90    
+Patient.OtherTime                           .00000     (Insuf)    .00000     .00000         90    
+Patient.TotalTime                           16.963     (Insuf)    .05508     73.124         90    
+Examination.Queue.WaitingTime               5.1399     (Insuf)    .00000     27.943         93    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Patient.WIP                                 3.2467     (Insuf)    .00000     9.0000     4.0000    
+Doctor.NumberBusy                           2.2392     (Insuf)    .00000     3.0000     3.0000    
+Doctor.NumberScheduled                      3.0000     (Insuf)    3.0000     3.0000     3.0000    
+Doctor.Utilization                          .74641     (Insuf)    .00000     1.0000     1.0000    
+Examination.Queue.NumberInQueue             1.0075     (Insuf)    .00000     6.0000     1.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Patient.NumberIn                            94.000    
+Patient.NumberOut                           90.000    
+Doctor.NumberSeized                         93.000    
+Doctor.ScheduledUtilization                 .74641    
+System.NumberOut                            90.000    
+
+Beginning replication 5 of 10
+
+                                      ARENA Simulation Results
+                                Musaib Bin Bashir - License: STUDENT
+
+                                  Summary for Replication 5 of 10
+
+Project: Unnamed Project                                             Run execution date :11/ 2/2026
+Analyst: Musaib Bin Bashir                                           Model revision date:11/ 2/2026
+
+Replication ended at time      : 480.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Patient.VATime                              11.055     (Insuf)    .00505     51.029        109    
+Patient.NVATime                             .00000     (Insuf)    .00000     .00000        109    
+Patient.WaitTime                            24.266     (Insuf)    .00000     85.238        109    
+Patient.TranTime                            .00000     (Insuf)    .00000     .00000        109    
+Patient.OtherTime                           .00000     (Insuf)    .00000     .00000        109    
+Patient.TotalTime                           35.321     (Insuf)    .29036     100.60        109    
+Examination.Queue.WaitingTime               23.884     (Insuf)    .00000     85.238        112    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Patient.WIP                                 8.2668     (Insuf)    .00000     23.000     8.0000    
+Doctor.NumberBusy                           2.6156     (Insuf)    .00000     3.0000     3.0000    
+Doctor.NumberScheduled                      3.0000     (Insuf)    3.0000     3.0000     3.0000    
+Doctor.Utilization                          .87188     (Insuf)    .00000     1.0000     1.0000    
+Examination.Queue.NumberInQueue             5.6512     (Insuf)    .00000     20.000     5.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Patient.NumberIn                            117.00    
+Patient.NumberOut                           109.00    
+Doctor.NumberSeized                         112.00    
+Doctor.ScheduledUtilization                 .87188    
+System.NumberOut                            109.00    
+
+Beginning replication 6 of 10
+
+                                      ARENA Simulation Results
+                                Musaib Bin Bashir - License: STUDENT
+
+                                  Summary for Replication 6 of 10
+
+Project: Unnamed Project                                             Run execution date :11/ 2/2026
+Analyst: Musaib Bin Bashir                                           Model revision date:11/ 2/2026
+
+Replication ended at time      : 480.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Patient.VATime                              12.272     (Insuf)    .03004     74.462         95    
+Patient.NVATime                             .00000     (Insuf)    .00000     .00000         95    
+Patient.WaitTime                            12.560     (Insuf)    .00000     44.330         95    
+Patient.TranTime                            .00000     (Insuf)    .00000     .00000         95    
+Patient.OtherTime                           .00000     (Insuf)    .00000     .00000         95    
+Patient.TotalTime                           24.833     (Insuf)    .06829     78.441         95    
+Examination.Queue.WaitingTime               12.429     (Insuf)    .00000     44.330         96    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Patient.WIP                                 4.9240     (Insuf)    .00000     14.000     1.0000    
+Doctor.NumberBusy                           2.4381     (Insuf)    .00000     3.0000     1.0000    
+Doctor.NumberScheduled                      3.0000     (Insuf)    3.0000     3.0000     3.0000    
+Doctor.Utilization                          .81270     (Insuf)    .00000     1.0000     .33333    
+Examination.Queue.NumberInQueue             2.4859     (Insuf)    .00000     11.000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Patient.NumberIn                            96.000    
+Patient.NumberOut                           95.000    
+Doctor.NumberSeized                         96.000    
+Doctor.ScheduledUtilization                 .81270    
+System.NumberOut                            95.000    
+
+Beginning replication 7 of 10
+
+                                      ARENA Simulation Results
+                                Musaib Bin Bashir - License: STUDENT
+
+                                  Summary for Replication 7 of 10
+
+Project: Unnamed Project                                             Run execution date :11/ 2/2026
+Analyst: Musaib Bin Bashir                                           Model revision date:11/ 2/2026
+
+Replication ended at time      : 480.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Patient.VATime                              13.250     (Insuf)    .47315     54.890         86    
+Patient.NVATime                             .00000     (Insuf)    .00000     .00000         86    
+Patient.WaitTime                            10.132     (Insuf)    .00000     32.778         86    
+Patient.TranTime                            .00000     (Insuf)    .00000     .00000         86    
+Patient.OtherTime                           .00000     (Insuf)    .00000     .00000         86    
+Patient.TotalTime                           23.382     (Insuf)    .47315     73.633         86    
+Examination.Queue.WaitingTime               10.583     (Insuf)    .00000     32.778         89    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Patient.WIP                                 4.5565     (Insuf)    .00000     12.000     11.000    
+Doctor.NumberBusy                           2.4346     (Insuf)    .00000     3.0000     3.0000    
+Doctor.NumberScheduled                      3.0000     (Insuf)    3.0000     3.0000     3.0000    
+Doctor.Utilization                          .81154     (Insuf)    .00000     1.0000     1.0000    
+Examination.Queue.NumberInQueue             2.1219     (Insuf)    .00000     9.0000     8.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Patient.NumberIn                            97.000    
+Patient.NumberOut                           86.000    
+Doctor.NumberSeized                         89.000    
+Doctor.ScheduledUtilization                 .81154    
+System.NumberOut                            86.000    
+
+Beginning replication 8 of 10
+
+                                      ARENA Simulation Results
+                                Musaib Bin Bashir - License: STUDENT
+
+                                  Summary for Replication 8 of 10
+
+Project: Unnamed Project                                             Run execution date :11/ 2/2026
+Analyst: Musaib Bin Bashir                                           Model revision date:11/ 2/2026
+
+Replication ended at time      : 480.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Patient.VATime                              15.496     (Insuf)    .20509     87.732         82    
+Patient.NVATime                             .00000     (Insuf)    .00000     .00000         82    
+Patient.WaitTime                            10.853     (Insuf)    .00000     47.465         82    
+Patient.TranTime                            .00000     (Insuf)    .00000     .00000         82    
+Patient.OtherTime                           .00000     (Insuf)    .00000     .00000         82    
+Patient.TotalTime                           26.350     (Insuf)    .47772     87.732         82    
+Examination.Queue.WaitingTime               11.418     (Insuf)    .00000     47.465         85    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Patient.WIP                                 5.0398     (Insuf)    .00000     14.000     14.000    
+Doctor.NumberBusy                           2.7187     (Insuf)    .00000     3.0000     3.0000    
+Doctor.NumberScheduled                      3.0000     (Insuf)    3.0000     3.0000     3.0000    
+Doctor.Utilization                          .90625     (Insuf)    .00000     1.0000     1.0000    
+Examination.Queue.NumberInQueue             2.3210     (Insuf)    .00000     11.000     11.000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Patient.NumberIn                            96.000    
+Patient.NumberOut                           82.000    
+Doctor.NumberSeized                         85.000    
+Doctor.ScheduledUtilization                 .90625    
+System.NumberOut                            82.000    
+
+Beginning replication 9 of 10
+
+                                      ARENA Simulation Results
+                                Musaib Bin Bashir - License: STUDENT
+
+                                  Summary for Replication 9 of 10
+
+Project: Unnamed Project                                             Run execution date :11/ 2/2026
+Analyst: Musaib Bin Bashir                                           Model revision date:11/ 2/2026
+
+Replication ended at time      : 480.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Patient.VATime                              10.822     (Insuf)    .17051     52.903         89    
+Patient.NVATime                             .00000     (Insuf)    .00000     .00000         89    
+Patient.WaitTime                            4.1809     (Insuf)    .00000     22.866         89    
+Patient.TranTime                            .00000     (Insuf)    .00000     .00000         89    
+Patient.OtherTime                           .00000     (Insuf)    .00000     .00000         89    
+Patient.TotalTime                           15.003     (Insuf)    .47172     52.903         89    
+Examination.Queue.WaitingTime               4.2212     (Insuf)    .00000     22.866         92    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Patient.WIP                                 2.9174     (Insuf)    .00000     10.000     5.0000    
+Doctor.NumberBusy                           2.0915     (Insuf)    .00000     3.0000     3.0000    
+Doctor.NumberScheduled                      3.0000     (Insuf)    3.0000     3.0000     3.0000    
+Doctor.Utilization                          .69718     (Insuf)    .00000     1.0000     1.0000    
+Examination.Queue.NumberInQueue             .82591     (Insuf)    .00000     7.0000     2.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Patient.NumberIn                            94.000    
+Patient.NumberOut                           89.000    
+Doctor.NumberSeized                         92.000    
+Doctor.ScheduledUtilization                 .69718    
+System.NumberOut                            89.000    
+
+Beginning replication 10 of 10
+
+                                      ARENA Simulation Results
+                                Musaib Bin Bashir - License: STUDENT
+
+                                  Summary for Replication 10 of 10
+
+Project: Unnamed Project                                             Run execution date :11/ 2/2026
+Analyst: Musaib Bin Bashir                                           Model revision date:11/ 2/2026
+
+Replication ended at time      : 480.0 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Patient.VATime                              9.9247     (Insuf)    .11649     48.797         85    
+Patient.NVATime                             .00000     (Insuf)    .00000     .00000         85    
+Patient.WaitTime                            2.0582     (Insuf)    .00000     18.839         85    
+Patient.TranTime                            .00000     (Insuf)    .00000     .00000         85    
+Patient.OtherTime                           .00000     (Insuf)    .00000     .00000         85    
+Patient.TotalTime                           11.982     (Insuf)    .11649     55.780         85    
+Examination.Queue.WaitingTime               2.0343     (Insuf)    .00000     18.839         86    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Patient.WIP                                 2.1319     (Insuf)    .00000     7.0000     1.0000    
+Doctor.NumberBusy                           1.7674     (Insuf)    .00000     3.0000     1.0000    
+Doctor.NumberScheduled                      3.0000     (Insuf)    3.0000     3.0000     3.0000    
+Doctor.Utilization                          .58916     (Insuf)    .00000     1.0000     .33333    
+Examination.Queue.NumberInQueue             .36448     (Insuf)    .00000     4.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Patient.NumberIn                            86.000    
+Patient.NumberOut                           85.000    
+Doctor.NumberSeized                         86.000    
+Doctor.ScheduledUtilization                 .58916    
+System.NumberOut                            85.000    
+
+
+                                      ARENA Simulation Results
+                                Musaib Bin Bashir - License: STUDENT
+
+                                 Output Summary for 10 Replications
+
+Project: Unnamed Project                                             Run execution date :11/ 2/2026
+Analyst: Musaib Bin Bashir                                           Model revision date:11/ 2/2026
+
+
+                                             OUTPUTS
+
+Identifier                                 Average    Half-width Minimum    Maximum # Replications
+___________________________________________________________________________________________________
+
+Patient.NumberIn                            97.700     7.5177     82.000     117.00     10
+Patient.NumberOut                           91.900     6.6629     81.000     109.00     10
+Doctor.NumberSeized                         94.300     6.9437     82.000     112.00     10
+Doctor.ScheduledUtilization                 .79324     .07616     .58916     .95611     10
+System.NumberOut                            91.900     6.6629     81.000     109.00     10
+
+Simulation run time: 0.00 minutes.
+Simulation run complete.
