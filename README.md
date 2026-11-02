@@ -20,6 +20,14 @@ You need Windows and Arena (any edition: Student, Academic, Standard, Profession
 powershell -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/MusaibBashir/arena-agent/main/install.ps1 | iex"
 ```
 
+Or with curl, from **Command Prompt**:
+
+```bat
+curl -fsSL https://raw.githubusercontent.com/MusaibBashir/arena-agent/main/install.ps1 -o "%TEMP%\arena-agent-install.ps1" && powershell -ExecutionPolicy Bypass -File "%TEMP%\arena-agent-install.ps1"
+```
+
+(In PowerShell, type `curl.exe`, not `curl`: there `curl` is a different built-in command.)
+
 That's all. It installs everything it needs in its own folder (no Python or git required; an existing Python is not
 touched), connects arena-agent to **Claude Code, Claude Desktop and Codex** (whichever you have), and checks that
 Arena responds. Start a new Claude or Codex session afterwards. Run the same command again to update.

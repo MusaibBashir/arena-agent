@@ -10,7 +10,9 @@
 #   ARENA_AGENT_SOURCE   what to install (default: the latest code on GitHub; a local folder works for development)
 #   ARENA_AGENT_CLIENTS  space-separated clients to register (default: all found): claude-code claude-desktop codex
 
-$ErrorActionPreference = 'Stop'
+# Not 'Stop': Windows PowerShell 5.1 turns anything a program writes to stderr (uv prints progress and notes there)
+# into a terminating error. Failures are checked explicitly with $LASTEXITCODE instead.
+$ErrorActionPreference = 'Continue'
 $ProgressPreference = 'SilentlyContinue'
 
 function Say($msg) { Write-Host "==> $msg" -ForegroundColor Cyan }
@@ -26,14 +28,15 @@ if (-not $uv) {
     Say 'Installing uv (Python app installer from astral.sh)'
     Invoke-RestMethod https://astral.sh/uv/install.ps1 | Invoke-Expression
     $env:Path = "$env:USERPROFILE\.local\bin;$env:Path"
-    $uv = Get-Command uv -ErrorAction Stop
+    $uv = Get-Command uv -ErrorAction SilentlyContinue
+    if (-not $uv) { throw 'uv could not be installed (see the messages above).' }
 }
 
 # 2. arena-agent itself, with a private Python 3.12
 Say "Installing arena-agent from $src"
 & $uv.Source tool install --force --python 3.12 $src
 if ($LASTEXITCODE -ne 0) { throw 'uv could not install arena-agent (see the messages above).' }
-& $uv.Source tool update-shell 2>$null | Out-Null
+& $uv.Source tool update-shell *> $null  # puts uv's tool folder on PATH for new terminals; harmless if already there
 
 $exe = Join-Path $env:USERPROFILE '.local\bin\arena-agent.exe'
 if (-not (Test-Path $exe)) {
@@ -48,6 +51,7 @@ if ($env:ARENA_AGENT_CLIENTS) {
 } else {
     & $exe install
 }
+if ($LASTEXITCODE -ne 0) { throw 'arena-agent could not register itself with your AI tools (see the messages above).' }
 
 # 4. health check (starts Arena once; allow up to a minute)
 Say 'Checking Arena (this starts Arena once; allow up to a minute)'
